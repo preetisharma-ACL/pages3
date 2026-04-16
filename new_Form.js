@@ -73,8 +73,8 @@ async function handleFormSubmit(formId) {
     }
 
     const payload = {
-      page_url: "https://brochure-2.woodsbarog.com",
-      project_name: "thewoodsbarog",
+      page_url: "",
+      project_name: "Codename Joy 3.0 -pune",
       form_name: name,
       form_mobile: phone,
       form_city: city,

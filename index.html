@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Codename Joy 3.0 – Pune’s Next Power Address by Shapoorji Pallonji</title>
+  <link rel="shortcut icon" href="img/joy-logo.jpg" type="image/favicon">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Montserrat:wght@300;500;600;700&amp;display=swap"
+    rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <link rel="preconnect" href="https://apiv2.aajneetiadvertising.com" crossorigin>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&amp;family=Inter:wght@300;600;700&amp;display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="img/joy-logo.jpg" width="120"></a>
+
+      <!-- Desktop Call Button -->
+
+      <button class="navbar-toggler d-lg-none border-0" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#mobileMenu">
+        <i class="fa-solid fa-bars fs-1"></i>
+      </button>
+
+      <div class="navbar-collapse d-none d-lg-flex">
+        <ul class="navbar-nav gap-4 fw-semibold">
+          <li><a class="nav-link" href="#banner">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#price">Price</a></li>
+          <li><a class="nav-link" href="#amenities">Amenities</a></li>
+          <li><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li><a class="nav-link" href="#location">Location</a></li>
+        </ul>
+      </div>
+      <a href="modal" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="custom-call-btn d-none d-lg-flex">
+        Contact Us</a>
+    </div>
+  </nav>
+
+  <!--  OFFCANVAS -->
+  <div class="offcanvas offcanvas-end" id="mobileMenu">
+    <div class="offcanvas-header">
+      <h5>Menu</h5>
+      <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav fw-semibold">
+        <li><a class="nav-link" data-bs-dismiss="offcanvas" href="#banner">Home</a></li>
+        <li><a class="nav-link" data-bs-dismiss="offcanvas" href="#about">About</a></li>
+        <li><a class="nav-link" data-bs-dismiss="offcanvas" href="#price">Price</a></li>
+        <li><a class="nav-link" data-bs-dismiss="offcanvas" href="#amenities">Amenities</a></li>
+        <li><a class="nav-link" data-bs-dismiss="offcanvas" href="#gallery">Gallery</a></li>
+        <li><a class="nav-link" data-bs-dismiss="offcanvas" href="#location">Location</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!--  HERO -->
+  <section class="re-hero-banner" id="banner" role="banner" aria-label="Ultra Luxury Living Banner">
+    <div class="re-side-stripe re-left-stripe" aria-hidden="true"></div>
+    <div class="re-hero-inner">
+      <div class="re-hero-image d-lg-none" role="img" aria-label="Ultra luxury residences">
+        <div class="re-right-stripe" aria-hidden="true"></div>
+      </div>
+      <div class="re-hero-panel">
+        <div class="re-top-s">
+          <h1 class="re-title"> Codename Joy 3.0</h1>
+          <div class="re-panel-top">
+            <div class="re-logo">
+              <i class="fa-solid fa-location-dot"></i>
+              <span class="re-company">Pune’s Next Power Address by Shapoorji Pallonji
+              </span>
+            </div>
+            <!-- <div class="re-dots"></div> -->
+          </div>
+        </div>
+
+        <div class="re-overshade">
+          <ul class="re-highlights">
+            <li>
+              <i class="fa-solid fa-check"></i>
+              Prices Starting from ₹84.99 L Onwards*
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              Hinjawadi, near Phase 1 | Pune’s high-demand IT destination
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              Adjacent to Ring Road | Strong future connectivity advantage
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              Surrounded by major social infrastructure and daily conveniences
+
+            </li>
+          </ul>
+          <div class="re-b-price mt-4">
+            <div class="price-banner">
+              <div class="banner-left">
+                <span class="bhk">2 & 3 BHK</span>
+                <span class="sub">Premium Residences</span>
+              </div>
+              <div class="divider"></div>
+              <div class="banner-right">
+                <span class="label">Bankable EOI: </span>
+                <span class="price mt-2">
+                  ₹90,000 for 2 & 3 BHK | ₹1.80 L for 3 BHK Duplex
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="re-hero-image d-none d-lg-block" role="img" aria-label="Ultra luxury residences">
+        <div class="re-right-stripe" aria-hidden="true"></div>
+      </div>
+    </div>
+    <div class="re-side-stripe re-right-stripe-outer" aria-hidden="true"></div>
+  </section>
+
+
+  <section class="contact-split-section">
+    <div class="container">
+
+      <div class="contact-wrapper">
+
+        <!-- Left Image -->
+        <div class="contact-image">
+          <img src="img/sp-3.jpg" alt="Project Image">
+          <div class="image-overlay">
+            <h3>Codename Joy 3.0</h3>
+            <p>Luxury Living in Hinjawadi</p>
+          </div>
+        </div>
+
+        <!-- Right Form -->
+        <div class="contact-form-box">
+
+          <h2>Enquire Now</h2>
+          <p>Get best price, floor plans & exclusive offers</p>
+
+          <form id="ajax-header-contact">
+
+            <div class="form-group">
+              <input type="text" placeholder="Full Name" name="form_name" required>
+            </div>
+
+            <div class="form-group">
+              <input type="tel" placeholder="Mobile Number" name="form_mobile" required>
+            </div>
+
+            <div class="form-group">
+              <input type="email" placeholder="Email Address" name="form_email" required>
+            </div>
+
+            <div class="form-group">
+              <input type="text" placeholder="City" name="form_city" required>
+            </div>
+
+            <div class="form-bottom">
+              <div class="form-check">
+                <input type="checkbox" id="privacy" checked required>
+                <label for="privacy">
+                  I agree to the <a href="#">Privacy Policy</a>
+                </label>
+              </div>
+
+              <button type="submit">Submit</button>
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- about -->
+  <section id="about">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5">
+          <div class="about-img">
+            <img src="img/about-sp.jpg" alt="Living Space" class="img-fluid w-100 " style="display: inline-block;">
+          </div>
+        </div>
+        <div class="col-lg-7 mb-4 mb-lg-0">
+          <h2 class="fw-semibold mb-3" style="color:#4c0b31;">
+            Codename Joy 3.0 – Pune’s Next Power Address by <br /> Shapoorji Pallonji
+          </h2>
+
+          <p class="text-muted mb-4">
+            Codename Joy 3.0 is a premium residential development in the heart of Hinjawadi, thoughtfully crafted for
+            modern families and forward-thinking investors. Developed by the renowned Shapoorji Pallonji Group, this
+            project blends trusted legacy, strategic location, and contemporary lifestyle into one exceptional offering.
+            <br />
+            Located near Hinjawadi Phase 1, Pune’s thriving IT hub, the project enjoys strong connectivity and
+            continuous demand from professionals and homebuyers alike. With proximity to the upcoming Ring Road,
+            residents will benefit from enhanced accessibility and long-term value appreciation.
+          </p>
+          <div class="row g-4">
+            <div>
+              <div class="d-flex align-items-start feature-box">
+                <div class="card-bottom w-30">
+                  <a href="modal" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn know-more-btn">
+                    Contact to Sales Team
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- pricing -->
+  <section class="apartment-pricing-section" id="price">
+    <div class="container">
+      <div class="section-head text-center">
+        <h2>Apartment Pricing</h2>
+        <p>From smartly planned 2 BHK apartments to luxurious 3 BHK and duplex homes, discover residences designed for
+          modern living with premium features and excellent investment potential.</p>
+      </div>
+
+      <div class="row d-flex justify-content-center g-4">
+
+        <!-- 2 BHK -->
+        <div class="col-lg-4 col-md-6">
+          <div class="bhk-card">
+            <div class="card-badge">Apartment</div>
+
+            <div class="card-top">
+              <h3>2 BHK</h3>
+              <span class="divider"></span>
+              <p class="size">685 – 837 sq.ft</p>
+            </div>
+
+            <div class="card-middle">
+              <h4>
+                ₹ 84.99 L – ₹ 1.04 Cr
+                <sup class="text-white fw-normal">*</sup>
+              </h4>
+              <p>Price Range</p>
+            </div>
+
+            <div class="card-bottom">
+              <a href="modal" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn know-more-btns">
+                Know More
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 BHK -->
+        <div class="col-lg-4 col-md-6">
+          <div class="bhk-card">
+            <div class="card-badge">Apartment</div>
+
+            <div class="card-top">
+              <h3>3 BHK</h3>
+              <span class="divider"></span>
+              <p class="size">1052 – 1190 sq.ft</p>
+            </div>
+
+            <div class="card-middle">
+              <h4>
+                ₹ 1.32 Cr – ₹ 1.50 Cr
+                <sup class="text-white fw-normal">*</sup>
+              </h4>
+              <p>Price Range</p>
+            </div>
+
+            <div class="card-bottom">
+              <a href="modal" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn know-more-btns">
+                Know More
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 BHK Duplex -->
+        <div class="col-lg-4 col-md-6">
+          <div class="bhk-card">
+            <div class="card-badge">Duplex</div>
+
+            <div class="card-top">
+              <h3>3 BHK Duplex</h3>
+              <span class="divider"></span>
+              <p class="size">1434 sq.ft</p>
+            </div>
+
+            <div class="card-middle">
+              <h4>
+                ₹ 1.89 Cr
+                <sup class="text-white fw-normal">*</sup>
+              </h4>
+              <p>Starting Price</p>
+            </div>
+
+            <div class="card-bottom">
+              <a href="modal" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn know-more-btns">
+                Know More
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- amenities -->
+  <section class="amenities-icon-section">
+    <div class="container">
+
+      <div class="text-center mb-4">
+        <h2 class="amenities-title">World-Class Amenities</h2>
+        <p class="amenities-text">
+          Thoughtfully curated amenities designed for comfort, convenience, and modern lifestyle.
+        </p>
+      </div>
+
+      <div class="row g-4 text-center">
+
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="amenity-icon-box">
+            <i class="fas fa-building"></i>
+            <p>Grand Clubhouse</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="amenity-icon-box">
+            <i class="fas fa-swimming-pool"></i>
+            <p>Swimming Pool</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="amenity-icon-box">
+            <i class="fas fa-dumbbell"></i>
+            <p>Gym & Yoga Studio</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="amenity-icon-box">
+            <i class="fas fa-child"></i>
+            <p>Kids Play Area</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="amenity-icon-box">
+            <i class="fas fa-spa"></i>
+            <p>Spa / Salon</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="amenity-icon-box">
+            <i class="fas fa-table-tennis"></i>
+            <p>Indoor Games</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="amenity-icon-box">
+            <i class="fas fa-book"></i>
+            <p>Library / Co-working</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="amenity-icon-box">
+            <i class="fas fa-tree"></i>
+            <p>Wooden Deck</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="amenity-icon-box">
+            <i class="fas fa-city"></i>
+            <p>Rooftop Clubhouse</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="amenity-icon-box">
+            <i class="fas fa-video"></i>
+            <p>CCTV Security</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="amenity-icon-box">
+            <i class="fas fa-bolt"></i>
+            <p>Power Backup</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="amenity-icon-box">
+            <i class="fas fa-fire-extinguisher"></i>
+            <p>Fire Safety</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="amenity-icon-box">
+            <i class="fas fa-parking"></i>
+            <p>Ample Parking</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- highlights -->
+  <section class="highlight-section">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- Left Content -->
+        <div class="col-lg-7 mb-4 mb-lg-0 order-2 order-lg-1">
+          <div class="highlight-content">
+
+            <h2 style="color:#4c0b31;">Why Invest in Codename Joy 3.0?</h2>
+
+            <div class="highlight-step">
+              <div class="highlight-number">01</div>
+              <div class="highlight-text">
+                <h4>Developed by Shapoorji Pallonji with a trusted legacy of 160+ years in construction excellence</h4>
+              </div>
+            </div>
+
+            <div class="highlight-step">
+              <div class="highlight-number">02</div>
+              <div class="highlight-text">
+                <h4>Prime location in Hinjawadi near Phase 1 – Pune’s most in-demand IT hub</h4>
+              </div>
+            </div>
+
+            <div class="highlight-step">
+              <div class="highlight-number">03</div>
+              <div class="highlight-text">
+                <h4>Close proximity to upcoming Ring Road ensuring strong future connectivity and appreciation</h4>
+              </div>
+            </div>
+
+            <div class="highlight-step">
+              <div class="highlight-number">04</div>
+              <div class="highlight-text">
+                <h4>Surrounded by top schools, malls, hospitals, and daily lifestyle conveniences</h4>
+              </div>
+            </div>
+
+            <div class="highlight-step">
+              <div class="highlight-number">05</div>
+              <div class="highlight-text">
+                <h4>High rental demand from IT professionals and working population</h4>
+              </div>
+            </div>
+
+            <div class="highlight-step">
+              <div class="highlight-number">06</div>
+              <div class="highlight-text">
+                <h4>Pre-launch pricing advantage with strong potential for price appreciation</h4>
+              </div>
+            </div>
+
+            <div class="highlight-step">
+              <div class="highlight-number">07</div>
+              <div class="highlight-text">
+                <h4>Priority home selection for preferred tower, floor, and view</h4>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right Image -->
+        <div class="col-lg-5 order-1 order-lg-2">
+          <div class="highlight-img">
+            <img src="img/a-2.jpg" alt="Codename Joy 3.0">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- gallery -->
+  <section id="gallery" class="py-5 bg-light">
+    <div class="container">
+
+      <!-- Section Heading -->
+      <div class="text-center mb-5">
+        <h2 class="fw-bold" style="color:#4c0b31;">Project Gallery</h2>
+        <p class="text-muted mt-2">
+          Explore thoughtfully designed living spaces and interiors
+        </p>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="row g-4">
+
+        <!-- Image 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="gallery-card">
+            <img src="img/sp-2.jpg" alt="Gallery Image">
+            <div class="gallery-overlay">
+              <span>Codename Joy 3.0</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="gallery-card">
+            <img src="img/sp-3.jpg" alt="Gallery Image">
+            <div class="gallery-overlay">
+              <span>Codename Joy 3.0</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="gallery-card">
+            <img src="img/a-2.jpg" alt="Gallery Image">
+            <div class="gallery-overlay">
+              <span>Codename Joy 3.0</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image 4 -->
+        <div class="col-lg-6 col-md-6 d-none d-md-block">
+          <div class="gallery-card">
+            <img src="img/shapoorji.jpg" alt="Gallery Image">
+            <div class="gallery-overlay">
+              <span>Codename Joy 3.0</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image 5 -->
+        <div class="col-lg-6 col-md-12 d-none d-md-block">
+          <div class="gallery-card">
+            <img src="img/a-1.jpg" alt="Gallery Image">
+            <div class="gallery-overlay">
+              <span>Codename Joy 3.0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project-btn d-flex justify-content-center mb-lg-3 my-lg-0 my-4 d-md-none">
+        <a href="tel:+917026373772">
+          View All
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- location -->
+  <section id="location" class="py-5">
+    <div class="container py-4 rounded-3">
+
+      <div class="location-hed my-4 text-center">
+        <h2 class=" fw-bold" data-aos="fade-up" style="color:#4c0b31;">
+          Location Advantages
+        </h2>
+        <p class="text-muted" data-aos="fade-up">
+          Step into Hinjawadi’s newest premium launch, where legacy, location, launch pricing, and elevated lifestyle
+          come together for smart homebuyers and early investors.
+        </p>
+      </div>
+
+      <div class="row align-items-center mt-5">
+
+        <div class="col-md-6">
+          <div class="map-image" data-aos="fade-right">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242114.24758468!2d73.6790816544179!3d18.52731508180815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b85bffffffff%3A0x9188423b1880a33e!2sShapoorji%20Pallonji%20%26%20Co%20Limited!5e0!3m2!1sen!2sin!4v1776341980758!5m2!1sen!2sin"
+              width="100%" height="450" style="border:0;" allowfullscreen loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="location-advantage">
+
+            <div class="py-3 border-bottom">
+              <div class="d-flex gap-3 align-items-center" data-aos="fade-up">
+                <div class="location-icon rounded">
+                  <i class="fas fa-map-marker-alt fs-5"></i>
+                </div>
+                <div>
+                  <p class="m-0 fw-semibold">
+                    Located in Hinjawadi near Phase 1 – Pune’s high-demand IT hub.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="py-3 border-bottom">
+              <div class="d-flex gap-3 align-items-center" data-aos="fade-up">
+                <div class="location-icon rounded">
+                  <i class="fas fa-road fs-5"></i>
+                </div>
+                <div>
+                  <p class="m-0 fw-semibold">
+                    Adjacent to the upcoming Ring Road for excellent future connectivity.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="py-3 border-bottom">
+              <div class="d-flex gap-3 align-items-center" data-aos="fade-up">
+                <div class="location-icon rounded">
+                  <i class="fas fa-building fs-5"></i>
+                </div>
+                <div>
+                  <p class="m-0 fw-semibold">
+                    Close to major IT parks, offices, and business hubs in Hinjawadi.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="py-3 border-bottom">
+              <div class="d-flex gap-3 align-items-center" data-aos="fade-up">
+                <div class="location-icon rounded">
+                  <i class="fas fa-school fs-5"></i>
+                </div>
+                <div>
+                  <p class="m-0 fw-semibold">
+                    Surrounded by top schools, colleges, hospitals, and shopping centers.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="py-3 border-bottom">
+              <div class="d-flex gap-3 align-items-center" data-aos="fade-up">
+                <div class="location-icon rounded">
+                  <i class="fas fa-users fs-5"></i>
+                </div>
+                <div>
+                  <p class="m-0 fw-semibold">
+                    Strong rental demand from IT professionals and working population.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="py-3">
+              <div class="d-flex gap-3 align-items-center" data-aos="fade-up">
+                <div class="location-icon rounded">
+                  <i class="fas fa-chart-line fs-5"></i>
+                </div>
+                <div>
+                  <p class="m-0 fw-semibold">
+                    High growth potential with rapid infrastructure development in the area.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- about developer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="footer-about">
+              <h3>About the Developer –Codename Joy 3.0 </h3>
+              <p>Shapoorji Pallonji Group is one of India’s most trusted and renowned names in the real estate and
+                construction industry, with a rich legacy spanning over 160 years. Known for delivering excellence
+                across residential, commercial, and infrastructure projects, the group has built a strong reputation for
+                quality, innovation, and reliability.
+                With a presence in multiple countries and a portfolio that includes some of India’s most iconic
+                developments, Shapoorji Pallonji continues to redefine urban living through thoughtfully designed spaces
+                and world-class construction standards.
+                <br />
+                The developer is committed to creating sustainable communities, integrating modern architecture with
+                functional design to enhance everyday living. Every project reflects their dedication to customer
+                satisfaction, timely delivery, and superior craftsmanship.
+                With Codename Joy 3.0, Shapoorji Pallonji brings its legacy of trust and excellence to Pune’s rapidly
+                growing Hinjawadi region — offering a perfect blend of luxury, comfort, and long-term investment value.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p> Disclaimer - The
+          content provided on
+          this website is for information
+          purposes only and does not
+          constitute an offer to avail any
+          service. The prices mentioned are
+          subject to change without prior
+          notice, and the availability of
+          properties mentioned is not
+          guaranteed.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="enquiryModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content custom-modal">
+
+        <!-- Close -->
+        <button type="button" class="btn-close custom-close" data-bs-dismiss="modal"></button>
+
+        <div class="modal-body">
+
+          <h3>Enquire Now</h3>
+          <p>Get best price & exclusive offers</p>
+
+          <form id="ajax-header-contact-2">
+            <input type="text" class="form-control mb-3" placeholder="Full Name" name="form_name" required>
+            <input type="tel" class="form-control mb-3" placeholder="Mobile Number" name="form_mobile" required>
+            <input type="email" class="form-control mb-3" placeholder="Email Address" name="form_email" required>
+            <input type="text" class="form-control mb-3" placeholder="City" name="form_city" required>
+
+            <div class="form-check mb-3">
+              <input type="checkbox" class="form-check-input" id="privacy" checked required>
+              <label class="form-check-label" for="privacy">
+                I agree to the <a href="#">Privacy Policy</a>
+              </label>
+            </div>
+
+            <button type="submit" class="btn submit-btn w-100">Submit</button>
+
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- mobile cta footer -->
+  <div class="mobile-cta  d-md-none" id="bottom-cta">
+    <a href="modal" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+      <button class="cta-btn cta-brochure">
+        Download Brochure
+      </button>
+    </a>
+    <a href="modal" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+      <button class="cta-btn cta-enquire">
+        Call To sales
+      </button>
+    </a>
+  </div>
+
+  <!--  SCRIPTS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="js/page.js"></script>
+
+  <script>
+    window.onload = function () {
+
+      setTimeout(function () {
+
+        var modalElement = document.getElementById('enquiryModal');
+
+        if (modalElement) {
+          var myModal = new bootstrap.Modal(modalElement);
+          myModal.show();
+        }
+
+      }, 3000);
+
+    };
+  </script>
+  <script src="new_Form.js"></script>
+</body>
+
+</html>
